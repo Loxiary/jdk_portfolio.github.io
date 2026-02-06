@@ -3,11 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="shortcut icon" href="../images/photo_profile.jpeg" type="image/x-icon">
+
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/contact.css">
-    <title>JDK Contact</title>
+    <link rel="stylesheet" href="../css/footer.css">
+
+    <meta name="description" content="Contactez Jeanne de Kerhor pour vos projets de photographie. Disponible à Paris et partout en France.">
+    <meta name="keywords" content="contact, photographe, réservation, devis photographie">
+
+    <script src="public/js/main.js" defer></script>
+
+    <title>Contact - Jeanne de Kerhor</title>
 </head>
 <body>
 
@@ -97,32 +106,28 @@
         </section>
     </main>
 
-    <script>
-        const hamburger = document.getElementById('hamburger');
-        const navMenu = document.getElementById('navMenu');
-        const closeMenu = document.getElementById('closeMenu');
-        const navLinks = document.querySelectorAll('.nav-btn');
-
-        // Ouvrir le menu
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
-
-        // Fermer avec le bouton ×
-        closeMenu.addEventListener('click', () => {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
-        });
-
-        // Fermer le menu quand on clique sur un lien
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                navMenu.classList.remove('active');
-            });
-        });
-    </script>
-    
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Jeanne de Kerhor</h3>
+                <p>Portfolio</p>
+            </div>
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="">Photographies</a></li>
+                    <li><a href="../html/about.html">À propos</a></li>
+                    <li><a href="../html/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Réseaux sociaux</h3>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/jeanne-de-kerhor-ba72303a9/" target="_blank" rel="noopener">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2025 Jeanne de Kerhor. Tous droits réservés.</p>
+    </footer>
 </body>
 </html>
