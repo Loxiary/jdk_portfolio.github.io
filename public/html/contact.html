@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/styles.css">
+    <link rel="stylesheet" href="/public/css/navbar.css">
+    <link rel="stylesheet" href="/public/css/contact.css">
+    <title>JDK Contact</title>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <img src="/public/images/photo_profile.jpeg" alt="Jeanne de Kerhor" class="profile-pic">
+            <span class="nav-name">Jeanne de Kerhor</span>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-right" id="navMenu">
+            <button class="close-menu" id="closeMenu">&times;</button>
+            <a href="main.html" class="nav-btn">Photographies</a>
+            <a href="about.html" class="nav-btn">A propos de moi</a>
+            <a href="contact.html" class="nav-btn">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="contact-section">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h1 class="contact-title">Contactez-moi</h1>
+                    <p class="contact-description">
+
+                    </p>
+
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <div class="icon-wrapper">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div class="card-content">
+                                <h3>Email</h3>
+                                <a href="mailto:jdekerhor@gmail.com">jdekerhor@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="icon-wrapper">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                            </div>
+                            <div class="card-content">
+                                <h3>Téléphone</h3>
+                                <a href="tel:+33743277376">+33 7 43 27 73 76</a>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="icon-wrapper">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="card-content">
+                                <h3>Localisation</h3>
+                                <p>Paris, France</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="icon-wrapper">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                </svg>
+                            </div>
+                            <div class="card-content">
+                                <h3>Réseaux sociaux</h3>
+                                <div class="social-links">
+                                    <a href="https://www.linkedin.com/in/jeanne-de-kerhor-ba72303a9/" target="_blank">LinkedIn</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+        const closeMenu = document.getElementById('closeMenu');
+        const navLinks = document.querySelectorAll('.nav-btn');
+
+        // Ouvrir le menu
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Fermer avec le bouton ×
+        closeMenu.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        });
+
+        // Fermer le menu quand on clique sur un lien
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+    
+</body>
+</html>
