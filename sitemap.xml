@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://loxiary.github.io/jdk_portfolio.github.io/</loc>
+    <loc>https://jdk-portfolio.pro/</loc>
     <lastmod>2025-02-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://loxiary.github.io/jdk_portfolio.github.io/public/html/about.html</loc>
+    <loc>https://jdk-portfolio.pro/about.html</loc>
     <lastmod>2025-02-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://loxiary.github.io/jdk_portfolio.github.io/public/html/contact.html</loc>
+    <loc>https://jdk-portfolio.pro/contact.html</loc>
     <lastmod>2025-02-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
