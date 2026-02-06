@@ -1,7 +1,7 @@
 .hero {
     margin: 40px 0;
     height: 50vh;
-    background-image: url('public/images/photos/photo_2.jpeg');
+    background-image: url('../images/photos/photo_2.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
