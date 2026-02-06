@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://loxiary.github.io/jdk_portfolio.github.io/sitemap.xml
+Sitemap: https://jdk-portfolio.pro/sitemap.xml
